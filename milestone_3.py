@@ -1,8 +1,11 @@
-from milestone_2 import word
+import random
+
+word_list = ["Strawberries","Raspberries","Apples","Oranges","Mangoes"]
+word = random.choice(word_list)
 
 while True:
     guess = input("Guess a letter: ")
-    if guess.isalpha():
+    if guess.isalpha() and len(guess) == 1:
         break
     else:
         print("Invalid letter. Please, enter a single alphabetical character.")
