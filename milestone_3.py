@@ -16,10 +16,10 @@ def ask_for_input():
     check(guess)
 
 def check(guess):
-    guesses = guess.lower()
-    if guesses in word:
-        print(f"Good guess! {guesses} is in the word.")
+    guess_letter = guess.lower()
+    if guess_letter in word:
+        print(f"Good guess! {guess_letter} is in the word.")
     else:
-        print(f"Sorry, {guesses} is not in the word. Try again.") 
+        print(f"Sorry, {guess_letter} is not in the word. Try again.") 
 
 ask_for_input()
